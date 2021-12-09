@@ -7,20 +7,21 @@ All you need is just ROS1(related packages which are installed automatically whe
 
 ## Contents
 -----------
-> scripts
->   > client.py   
->   > listener.py   
->   > server.py   
->   > talker.py   
-> srv   
->   > PythonTest.srv   
-> CMakeLists.txt   
-> README.md   
-> package.xml   
+|- scripts
+|   |- client.py   
+|   |- listener.py   
+|   |- server.py   
+|   |- talker.py   
+|- srv   
+|   |- PythonTest.srv   
+|- CMakeLists.txt   
+|- README.md   
+|- package.xml   
 
 ## Descriptions
 ### Codes in scripts/
 1. client.py
+
 '''
     When we use rospy to create service, the "client.py" takes a role of "client". So, it can request the service to server and receive the response.
     
@@ -28,7 +29,9 @@ All you need is just ROS1(related packages which are installed automatically whe
     
     response.
 '''
+
 2. listener.py
+
 '''
     When we use rospy to communicate with other nodes, the "listener.py" takes a role of "subscriber". In this example, the "subscriber" subscribes    
     
@@ -36,7 +39,9 @@ All you need is just ROS1(related packages which are installed automatically whe
     
     has a name of "chatter", and calls back the string message to terminal like "I heard Something".
 '''
+
 3. server.py
+
 '''
     When we use rospy to create service, the "server.py" takes a role of "server". So, it can reply the service from client.
   
@@ -44,7 +49,9 @@ All you need is just ROS1(related packages which are installed automatically whe
   
     like "Ctrl+c"
 '''
+
 4. talker.py
+
 '''
     When we use rospy to communicate with other nodes, the "talker.py" takes a role of "publisher". In this example, the "publisher" publishes the topic which   
   
