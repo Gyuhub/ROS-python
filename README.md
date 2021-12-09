@@ -7,16 +7,16 @@ All you need is just ROS1(related packages which are installed automatically whe
 
 ## Contents
 -----------
-|- scripts
-|   |- client.py   
-|   |- listener.py   
-|   |- server.py   
-|   |- talker.py   
-|- srv   
-|   |- PythonTest.srv   
-|- CMakeLists.txt   
-|- README.md   
-|- package.xml   
+├─scripts
+│   | client.py   
+|   | listener.py   
+|   | server.py   
+|   └─talker.py   
+├─srv   
+|   | PythonTest.srv   
+| CMakeLists.txt   
+| README.md   
+└─package.xml   
 
 ## Descriptions
 ### Codes in scripts/
