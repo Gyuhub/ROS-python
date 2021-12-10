@@ -22,60 +22,43 @@ All you need is just ROS1(related packages which are installed automatically whe
 ```
 
 ## Descriptions
-### Codes in scripts/
 
-1. client.py
+### Codes in `.scripts`
 
-```sh
-    When we use rospy to create service, the "client.py" takes a role of "client". 
+1. `client.py`
+
+When we use rospy to create service, the `client.py` takes a role of **client**. 
     
-    So, it can request the service to server and receive the response.
+So, it can request the service to server and receive the response.
     
-    In this example, the "client" requests two integer numbers to server and waits for the sum of the two numbers. 
+In this example, the **client** requests two integer numbers to server and waits for the sum of the two numbers. 
     
-    It will terminate automatically After receive response.
-```
-
-2. listener.py
+It will terminate automatically After receive response.
 
 
-```sh
-    When we use rospy to communicate with other nodes,
-    
-    the "listener.py" takes a role of "subscriber". 
-    
-    In this example, the "subscriber" subscribes    
-    
-    the topic which has a name of "chatter", 
-    
-    and calls back the string message to terminal like "I heard Something".
+2. `listener.py`
 
-```
-
-3. server.py
-
-
-```sh
-    When we use rospy to create service, the "server.py" takes a role of "server".
+When we use rospy to communicate with other nodes, the `listener.py` takes a role of **subscriber**.
     
-    So, it can reply the service from client.
+In this example, the **subscriber** subscribes the topic which has a name of **chatter**,
+    
+and calls back the string message to terminal like "I heard Something".
+
+3. `server.py`
+
+When we use rospy to create service, the `server.py` takes a role of **server**.
+    
+So, it can reply the service from client.
   
-    In this example, the "server" replies the sum of two numbers which is requested by the "client". 
+In this example, the **server** replies the sum of two numbers which is requested by the **client**. 
     
-    It will not terminate while the user enter terminate signal like "Ctrl+c"
-
-```
-
-4. talker.py
+It will not terminate while the user enter terminate signal like "Ctrl+c"
 
 
-```sh
-    When we use rospy to communicate with other nodes, 
+4. `talker.py`
+
+When we use rospy to communicate with other nodes, the `talker.py` takes a role of **publisher**. 
     
-    the "talker.py" takes a role of "publisher". 
-    
-    In this example, the "publisher" publishes the topic which   
+In this example, the **publisher** publishes the topic which   
   
-    has a name of "chatter". the message of topic is "Hello world" + "server time".
-
-```
+has a name of **chatter**. the message of topic is "Hello world" + "server time".
